@@ -11,6 +11,7 @@ namespace Business.ValidationRules.FluentValidation.Examples
 {
     public class ExampleUpdateValidator : AbstractValidator<ExampleUpdateDto>
     {
+        //Example nesnesinin güncellenmesi sırasında çalışan doğrulama kurallarını barındırır.
         public ExampleUpdateValidator()
         {
             RuleFor(e => e.Name).NotEmpty().WithMessage(Messages.ExampleNameNotEmpty);

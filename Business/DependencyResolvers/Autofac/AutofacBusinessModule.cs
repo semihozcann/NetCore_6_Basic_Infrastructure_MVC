@@ -21,6 +21,12 @@ namespace Business.DependencyResolvers.Autofac
     {
         protected override void Load(ContainerBuilder builder)
         {
+            //Katmanlar arasındaki bağlar interfaceler üzerinden kurulmuştur. Yani biz her yerde aslında interface talep ederiz bu sebepten yazılımımıza istediğimiz interfaceler karşılığında hangi classı vermesi gerektiğini söylememiz gerekir. 
+            //Buna bağımlılık çözme denmektedir.
+            //Autofac kütüphanesini kullanarak bağımlılıkları aşağıdaki örneklerdeki gibi çözebiliriz.
+            //AspNetCore içerisinde default olarak bağımlılık çözücü servisi bulunur. İstenirse bu işlem direkt olarak API içerisinde Program.cs içerisinde de yapılabilir. 
+            //Fakat genelde bağımlıklıkları Backend kısmında yönetmeyi tercih ederiz.
+            //Autofack kütüphanesinin çalışabilmsi için API içerisndeki Program.cs içerisine gerekli comfigurasyon ypılmalıdır. Aksi takdirde servisimiz çalışmayacaktır.
 
             builder.RegisterType<ProjectNameContext>().As<DbContext>().SingleInstance();
 

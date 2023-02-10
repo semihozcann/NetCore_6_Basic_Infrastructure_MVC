@@ -39,21 +39,21 @@ namespace Business.Concrete
 
         #region AddAsync
 
-        [SecuredOperation("admin")] //Yetkilendirme
-        [ValidationAspect(typeof(ExampleAddValidator))] //Doğrulama 
+        //[SecuredOperation("admin")] //Ui'dan gelen isteği yapan kişinin yetkisi olup olmadığını kontrol eder. 
+        [ValidationAspect(typeof(ExampleAddValidator))] //Ui'dan gelen verinin yapısının doğrulunu kontrol eder. 
         public async Task<IResult> AddAsync(ExampleAddDto exampleAddDto)
         {
 
-            Task<IResult> result = BusinessRules.Run(ExampleNameAlreadyExist(exampleAddDto.Name)); //İş kuralları
+            Task<IResult> result = BusinessRules.Run(ExampleNameAlreadyExist(exampleAddDto.Name)); //İş kuralları Run metodu içine virgül ile ayrılarak yazılabilir. Run metodu her kuralı sırayla denetleyerek hata varsa hatayı döndürür. Eğer hata yoksa başarılı ile geçerse bütün kurallardan bir işlem yapmaz ve talep ettiğimiz ekleme işlemi gerçekleşir.
 
-            if (result != null) //İş kurallarından geçip geçmediğinin kontrolü 
+            if (result != null) //Run metodundan null değer gelmediyse
             {
-                return result.Result;
+                return result.Result; //Run metodu null harici bir değer gönderirse çalışır.
             }
-            var example = _mapper.Map<Example>(exampleAddDto); //Map işlemi 
-            await _exampleRepository.AddAsync(example); //maplenen varlığı ekleme işlemi
-            await _exampleRepository.SaveAsync(); //Yapılan değişikliğin kayıt işlemi
-            return new SuccessResult(Messages.ExampleAdded);
+            var example = _mapper.Map<Example>(exampleAddDto); //Map işlemi yapar.
+            await _exampleRepository.AddAsync(example); //maplenen varlığı ekleme işlemi yapar.
+            await _exampleRepository.SaveAsync(); //Yapılan değişikliğin kayıt işlemi yapar.
+            return new SuccessResult(Messages.ExampleAdded); //Son noktadır API'ye başarı mesajını gönderir. 
 
         }
 
@@ -63,16 +63,16 @@ namespace Business.Concrete
 
         public async Task<IResult> DeleteAsync(int exampleId)
         {
-            var example = await _exampleRepository.GetAsync(e => e.Id == exampleId); //id üzerinden varlığı yakalama işlemi
+            var example = await _exampleRepository.GetAsync(e => e.Id == exampleId); //id üzerinden varlığı yakalama işlemi yapar.
             if (example != null) //eğer ilgili id varsa;
             {
-                var deletedExample = await _exampleRepository.DeleteAsync(example); //varlığı silme işlemi
-                await _exampleRepository.SaveAsync(); //değişikliği kayıt işlemi
-                return new SuccessResult(Messages.ExampleDeleted);
+                var deletedExample = await _exampleRepository.DeleteAsync(example); //varlığı silme işlemi yapar.
+                await _exampleRepository.SaveAsync(); //değişikliği kayıt işlemi yapar.
+                return new SuccessResult(Messages.ExampleDeleted); //Son noktadır API'ye başarı mesajını gönderir. 
             }
             else //eğer ilgili id yoksa
             {
-                return new ErrorResult(Messages.ExampleNotFound);
+                return new ErrorResult(Messages.ExampleNotFound); //Son noktadır API'ye hata mesajını gönderir. 
             }
         }
 
@@ -82,31 +82,31 @@ namespace Business.Concrete
 
         public async Task<IDataResult<ExampleListDto>> GetAllAsync()
         {
-            var examples = await _exampleRepository.GetAllAsync(); //bütün varlıkları getirme işlemi
+            var examples = await _exampleRepository.GetAllAsync(); //bütün varlıkları getirme işlemi yapar.
             if (examples != null) //eğer varlık varsa;
             {
-                return new SuccessDataResult<ExampleListDto>(new ExampleListDto { Examples = examples }, Messages.ExamplesListed);
+                return new SuccessDataResult<ExampleListDto>(new ExampleListDto { Examples = examples }, Messages.ExamplesListed); //Son noktadır API'ye başarı mesajını ve ilgili dataları'yı gönderir. 
             }
             else // eğer varlık yoksa;
             {
-                return new ErrorDataResult<ExampleListDto>(Messages.ExampleNotFound);
+                return new ErrorDataResult<ExampleListDto>(Messages.ExampleNotFound); //Son noktadır API'ye hata mesajını gönderir. 
             }
         }
 
         #endregion
 
-        #region GetAsync
+        #region GetByIdAsync
 
-        public async Task<IDataResult<ExampleDto>> GetAsync(int exampleId)
+        public async Task<IDataResult<ExampleDto>> GetByIdAsync(int exampleId)
         {
-            var example = await _exampleRepository.GetAsync(e => e.Id == exampleId); //id üzerinden bir varlığı getirme işlemi
+            var example = await _exampleRepository.GetAsync(e => e.Id == exampleId); //id üzerinden bir varlığı getirme işlemi yapar.
             if (example != null) //eğer varlık varsa;
             {
-                return new SuccessDataResult<ExampleDto>(new ExampleDto { Example = example }, Messages.ExampleGeted);
+                return new SuccessDataResult<ExampleDto>(new ExampleDto { Example = example }, Messages.ExampleGeted); //Son noktadır API'ye başarı mesajını ve ilgili datayı gönderir. 
             }
             else //eğer varlık yoksa
             {
-                return new ErrorDataResult<ExampleDto>(Messages.ExampleNotFound);
+                return new ErrorDataResult<ExampleDto>(Messages.ExampleNotFound); //Son noktadır API'ye hata mesajını gönderir. 
             }
         }
 
@@ -117,11 +117,12 @@ namespace Business.Concrete
         [ValidationAspect(typeof(ExampleAddValidator))]
         public async Task<IResult> UpdateAsync(ExampleUpdateDto exampleUpdateDto)
         {
-            var oldExample = await _exampleRepository.GetAsync(e => e.Id == exampleUpdateDto.Id); //id üzerinden varlığı getirme işlemi
-            var example = _mapper.Map<ExampleUpdateDto, Example>(exampleUpdateDto, oldExample); //getirilen varlığı mapleme işlemi
-            var updatedExample = await _exampleRepository.UpdateAsync(example); //maplenen varlık üzerinde değişiklik işlemi
+            var oldExample = await _exampleRepository.GetAsync(e => e.Id == exampleUpdateDto.Id); //id üzerinden varlığı getirme işlemi yapar.
+            var example = _mapper.Map<ExampleUpdateDto, Example>(exampleUpdateDto, oldExample); //getirilen varlığı mapleme işlemi yapar.
+            var updatedExample = await _exampleRepository.UpdateAsync(example); //maplenen varlık üzerinde değişiklik işlemi yapar.
+            await _exampleRepository.SaveAsync(); //Yapılan değişikliklerin kayıt işlemini yapar.
 
-            return new SuccessResult(Messages.ExampleUpdated);
+            return new SuccessResult(Messages.ExampleUpdated); //Son noktadır API'ye başarı mesajını gönderir. 
         }
 
         #endregion
@@ -132,10 +133,12 @@ namespace Business.Concrete
 
 
         #region BusinessRules
-
+        //iş kurallar birden fazla yerde kullanılabilir bu sebepten bu kısımda bir metot ile oluşturulup gerekli yerde çağırılarak kullanmak daha verimli olur. 
+        //Bu sayede birden fazla yerde kullanılan bir kuralda değişiklik yapılması gerekince buradan değişiklik yapılınca her yerde değişmiş olur.
         public async Task<IResult> ExampleNameAlreadyExist(string exampleName)
         {
-            var example = await _exampleRepository.GetAllAsync(e => e.Name == exampleName);
+            //Burada aynı isimde başka bir örnek eklenmesini engellemek amacıyla bir örnek kural yazılmıştır.
+            var example = await _exampleRepository.GetAllAsync(e => e.Name == exampleName); 
             var result = example.Any();
             if (result)
             {

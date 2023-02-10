@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 
-//Kendi hazýrladýðýmýz baðýmlýlýk çözücü modülünü kullanmasý gerektiðini program.cs e bu þekilde bildiriyoruz.
+//Autofac kütüphanesinin Comfigurasyon kodlarý
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new AutofacBusinessModule()));
 

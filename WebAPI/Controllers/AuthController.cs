@@ -16,6 +16,7 @@ namespace WebAPI.Controllers
             _authService = authService;
         }
 
+        //Kullanıcı Giriş Fonksiyonu
         [HttpPost("login")]
         public ActionResult Login(UserForLoginDto userForLoginDto)
         {
@@ -34,6 +35,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Result.Message);
         }
 
+        //Kullanıcı Kayıt Fonksiyonu
         [HttpPost("register")]
         public ActionResult Register(UserForRegisterDto userForRegisterDto)
         {

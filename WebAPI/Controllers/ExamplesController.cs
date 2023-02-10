@@ -54,9 +54,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getbyid")]
-        public async Task<IActionResult> GetAsync(int exampleId)
+        public async Task<IActionResult> GetByIdAsync(int exampleId)
         {
-            var result = await _exampleService.GetAsync(exampleId);
+            var result = await _exampleService.GetByIdAsync(exampleId);
             if (result.Success)
             {
                 return Ok(result);

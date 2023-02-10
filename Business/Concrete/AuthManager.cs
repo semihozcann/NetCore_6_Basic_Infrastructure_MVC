@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation.Users;
+using Core.Aspects.Autofac;
 using Core.Entities.Concrete;
 using Core.Utilities.Result.Abstract;
 using Core.Utilities.Result.Concrete;
@@ -34,6 +36,7 @@ namespace Business.Concrete
 
         #region RegisterAsync
 
+        [ValidationAspect(typeof(AuthRegisterValidator))]
         public async Task<IDataResult<User>> RegisterAsync(UserForRegisterDto userForRegisterDto, string password)
         {
             byte[] passwordHash, passwordSalt;

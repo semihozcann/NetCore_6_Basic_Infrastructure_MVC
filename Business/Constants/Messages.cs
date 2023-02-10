@@ -32,7 +32,15 @@ namespace Business.Constants
         public static string SuccessfulLogin ="Giriş Başarılı";
         public static string UserAlreadyExists = "Bu email üzerine kayıtlı kullanıcı bulunmaktadır.";
         public static string AccessTokenCreated = "Access Token oluşturuldu";
+        public static string MailNotEmpty = "Mail kısmı boş kalamaz.";
+        public static string EmailTooLong = "Mail en fazla 150 karakter olabilir.";
+        public static string FirstNameNotEmpty = "İsim kısmı boş olamaz";
+        public static string FirstNameTooLong = "İsim kısmı en fazla 50 karakter olabilir.";
+        public static string LastNameNotEmpty = "Soyisim kısmı boş olamaz";
+        public static string LastNameTooLong = "Soyisim kısmı en fazla 100 karakter olabilir.";
 
         public static string AuthorizationDenied = "Yetkiniz Yok.";
+
+
     }
 }

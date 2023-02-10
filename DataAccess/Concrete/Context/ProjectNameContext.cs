@@ -1,4 +1,5 @@
-﻿using Core.Entities.Concrete;
+﻿using Core.Entities.Abstract;
+using Core.Entities.Concrete;
 using DataAccess.Mapping;
 using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
@@ -39,5 +40,21 @@ namespace DataAccess.Concrete.Context
             builder.ApplyConfiguration(new UserOperationClaimMap());
         }
 
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            //ChangeTracker mekanizması varlıkların durumlarını takip eden bir yapıdır. Bu sayede işlem yaparken varlıklar üzerinde ne işlem yapıldığını anlayabilir. Burada Bundan faydalanarak varlıklar üzerindeki değişime göre işlem esnasında yapılmasını istediğimiz eylemleri gereçekleştirebiliriz.
+            var datas = ChangeTracker.Entries<BaseEntity>(); // varlığın yakalanması
+            foreach (var data in datas) 
+            {
+                _ = data.State switch
+                {
+                    EntityState.Added => data.Entity.CreatedDate = DateTime.UtcNow, //ekleme işlemi ise işlem anındaki tarihi CreatedDate stununa ekle
+                    EntityState.Modified => data.Entity.UpdatedDate = DateTime.UtcNow, //Güncelleme işlemi ise işlem anındaki tarihi UpdatedDate stununa ekle
+
+                    //Bu kısıma işlem anında yapılmasını istediğiniz şeyleri ekleyebilirsiniz.
+                };
+            }
+            return base.SaveChangesAsync(cancellationToken); //Değişiklikleri kaydet
+        }
     }
 }
