@@ -1,0 +1,38 @@
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Business.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\refint\Business.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Core.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Core.pdb
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\Murat\Desktop\SEMİH\C#\NetCore_6_Basic_Infrastructure\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Business.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Core.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\DataAccess.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Core.pdb
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\refint\Business.dll
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\semih\Desktop\C# Kodları\Devam Eden Projeler\NetCore_6_Basic_Infrastructure_API\Business\obj\Debug\net6.0\ref\Business.dll
