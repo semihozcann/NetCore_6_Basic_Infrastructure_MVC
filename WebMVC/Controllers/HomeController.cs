@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Abstract;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebMVC.Models;
 
@@ -7,14 +8,21 @@ namespace WebMVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IExampleService _exampleService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IExampleService exampleService)
         {
             _logger = logger;
+            _exampleService = exampleService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var result= await _exampleService.GetAllAsync();
+            if (result.Success)
+            {
+                return View(result.Data);
+            }
             return View();
         }
 
