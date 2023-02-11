@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qfn8F/T7BsmzpW2Y/Nc6mIzOMVxRwKKSY9LNRRlx/mXF04EDUK0EJZ6QHDHZeBOelj/UPVSe+Kifz9GSRyY6Yw==",
+  "dgSpecHash": "6GEOkRleDLUE9aTwzMM19/88KBCMpXkAxO+nZmdIp1zMp8+HxbZ6IcnBVqtjf4OKcnvhMk2XQufPCx5HfKY27g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_API\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_MVC\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\semih\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\semih\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",

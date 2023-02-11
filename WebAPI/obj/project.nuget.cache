@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i0Ni3zOA9WEnOCexfTvqJlKrjTfjIn4KVkVvBgDWgIbOKTV/ReE0Ugz1jtB96ySVoHt82tmxyEMXPabdjn5gPw==",
+  "dgSpecHash": "W31jzrrocTfPtSCBaEV2LTWtMg8T+ocqeX+GTb/GUuGX7xQvx+JTrPIeQ9H3wQiyL9BJZm4zH1FJfJFT1TDFEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_API\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_MVC\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\semih\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\semih\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

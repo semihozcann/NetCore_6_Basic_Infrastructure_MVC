@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BXy4MieAnqJX2pFh1b7NF3E3ce0BDpGcP8nNn6XF4nVNumsU1ZMEq3SqBuySAGaoqCFEe9faZ2U/LnHe+ZXVLQ==",
+  "dgSpecHash": "qMoot6dIrsNL45ODMKf9LMxLjSYMfsspr8jGP41UwGKmDXz4HeRgmdhPZ6Cm1VdEIDNIcI37u+dsgKslOcneXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_API\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_MVC\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\semih\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\semih\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",

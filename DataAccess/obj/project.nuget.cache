@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lEjVfwZlX5E1lfmf4A0k3MjCboCTfuDAD6GOsoYVUr6QRn9EG6m7BAsPfqQMP89t9HpRCsIlcVrm7wxETJ5fkA==",
+  "dgSpecHash": "vYNMXozJVemsvPUm1lUZJ0HiAaEaGfKYy0sMv92H6ljnvX8URiO7AZvWuDGO3VqLih9EM5NisbPX6SBBP0/gmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_API\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\semih\\Desktop\\C# Kodları\\Devam Eden Projeler\\NetCore_6_Basic_Infrastructure_MVC\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\semih\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\semih\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
