@@ -35,3 +35,10 @@
         <li>:arrow_right: <b>Entities =></b> <i>It is the entity layer. </i></li>
         <li>:arrow_right: <b> WebMVC =></b> <i>It is the client layer</i></li>
     </ul>
+
+<h3>:star2: People I took as an example while preparing the project :</h3>
+    <ul>
+        <li>:arrow_right: <a href="https://github.com/engindemirog">Engin Demiroğ</a>  </li>
+        <li>:arrow_right: <a href="https://github.com/gncyyldz">Gençay Yıldız</a></li>
+        <li>:arrow_right: <a href="https://github.com/alpaslanakgun">Alpaslan Akgün</a></li>
+    </ul>
