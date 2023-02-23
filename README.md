@@ -13,14 +13,14 @@
     <li>:arrow_right:  Infrastructure has been prepared for user registration and login processes.</li>
     <li>:arrow_right:  Hashing and encryption infrastructure has been prepared for user passwords for security.</li>
     <li>:arrow_right:  Authorization infrastructure has been prepared for security.</li>
-    <li>:arrow_right:  The endpoint infrastructure has been prepared for the responses of requests to the API.</li>
+    <li>:arrow_right:  The endpoint infrastructure has been prepared for the responses of requests to the client.</li>
 </ul>
 
 <h3>:star2: Built With :<h3/>
     <ul>
         <li>:arrow_right:  C# </li>
         <li>:arrow_right:  ASP.NET Core 6 </li>
-        <li>:arrow_right:  Web API </li>
+        <li>:arrow_right:  Web MVC </li>
         <li>:arrow_right:  SQL Server </li>
         <li>:arrow_right:  Entity Framework </li>
         <li>:arrow_right:  Autofac </li>
@@ -33,5 +33,5 @@
         <li>:arrow_right: <b>DataAccess =></b> <i>It is the data access layer. </i></li>
         <li>:arrow_right: <b>Core =></b> <i>It is the layer where all projects can work with universal codes.</i></li>
         <li>:arrow_right: <b>Entities =></b> <i>It is the entity layer. </i></li>
-        <li>:arrow_right: <b> WebAPI =></b> <i>It is the Service layer for communication with the client.</i></li>
+        <li>:arrow_right: <b> WebMVC =></b> <i>It is the client layer</i></li>
     </ul>
